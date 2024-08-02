@@ -40,8 +40,15 @@ def not_bad(s):
 #  a-front + b-front + a-back + b-back
 
 def front_back(a, b):
-    # +++your code here+++
-    return
+    a_mid = (len(a)+1) // 2
+    b_mid = (len(b) + 1) // 2
+
+    a_front = a[0: a_mid]
+    a_back = a[a_mid: len(a)]
+    b_front = b[0:b_mid]
+    b_back = b[b_mid : len(b)]
+
+    return a_front + b_front + a_back +b_back
 
 
 # Simple provided test() function used in main() to print
