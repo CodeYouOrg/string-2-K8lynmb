@@ -9,8 +9,11 @@
 # Return the resulting string.
 
 def verbing(s):
-    # +++your code here+++
-    return
+    if s[-3:] == 'ing':
+        return s + 'ly'
+    if len(s) >= 3:
+        return s + 'ing'
+    return s
 
 
 # E. not_bad
